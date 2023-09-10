@@ -17,6 +17,7 @@
                     <!-- <li class="navitems"><a href="" class="navlinks">Acerca de Mí</a></li> -->
                     <li class="navitems"><a href="#habilidades" class="navlinks">Habilidades</a></li>
                     <li class="navitems"><a href="#contacto" class="navlinks">Contacto</a></li>
+                    <li class="navitems"><a href="#proyectos" class="navlinks">Proyectos</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,8 +39,8 @@
                 <div class="imagen-container"></div>
             </div>
             <div class="hablemos">
-                <button class="btn">¿Quieres Dialogar?</button>
-                <button class="btn">Vamos a Hablar</button>
+                <button class="btn" onclick="location.href='#proyectos'">Ver Proyectos</button>
+                <button class="btn"><a class="hablemos" href="https://wa.me/573228835597" target="_blank">Vamos a Hablar</a></button>
             </div>
         </div>
     </section>
@@ -71,37 +72,50 @@
         </div>
     </section>
 
-    
-    <div id="contacto">
-        <div class="contact_me">
-            <h2>CONTACT US</h2>
-            <h1>Ways To Contact Me</h1>
-            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro laudantium aperiam non, assumenda quod eos nesciunt, et incidunt ducimus sequi delectus. Eligendi sapiente quos aperiam.</h3>
-        </div>
-        <div class="contact_options">
-            <div class="contact">
-                <img src="images/gmail.png" alt="" class="contact_me_icons">
-                <a href="#" class="contact_link">prueba@gmail.com</a>
+    <section id="proyectos">
+        <h1 class="titulo-proyecto">Proyectos Personales</h1>
+        <div class="proyectos-items">
+            <div class="container-proyectos">
+                <h2>Título Proyecto</h2>
+                <div class="item-proyecto">Proyecto Mundo PC<a href="" class="link-proyecto">Ver Más...</a></div>
+                <div class="item-proyecto">Paleta de colores<a href="/Proyectos/Paleta de colores/index.html" target="_blank" class="link-proyecto">Ver Más...</a></div>
+                <div class="item-proyecto">Calculadora Básica<a href="/Proyectos/Calculadora Básica/index.html" target="_blank" class="link-proyecto">Ver Más...</a></div>
+                <div class="item-proyecto">Listado de Personas<a href="/Proyectos/Listado personas/index.html" target="_blank" class="link-proyecto">Ver Más...</a></div>
+                <div class="item-proyecto">Más Proyectos<a href="" class="link-proyecto">Ver Más Proyectos...</a></div>
             </div>
-            <div class="contact">
-                <img src="images/telefono.png" alt="" class="contact_me_icons">
-                <a href="#" class="contact_link">322 883 5597</a>
-            </div>
-            <div class="contact">
-                <img src="images/pinterest.png" alt="" class="contact_me_icons">
-                <a href="#" class="contact_link">Pinterest</a>
-            </div>
-            <div class="contact">
-                <img src="images/instagram.png" alt="" class="contact_me_icons">
-                <a href="#" class="contact_link">JEEV</a>
-            </div>
-            <div class="contact">
-                <img src="images/twitter.png" alt="" class="contact_me_icons">
-                <a href="#" class="contact_link">Tortoiz</a>
+            <div class="container-proyectos">
+                <h2>Descripción</h2>
+                <div class="descripcion">Creación de clases Padre y Clases hijas.(atributos, constructor, métodos)</div>
+                <div class="descripcion">Paleta de colores con html, css y JavaScript.</div>
+                <div class="descripcion">Calculadora Básica.</div>
+                <div class="descripcion">Mostrar nombre y apellido de objetos de tipo Persona.</div>
+                <div class="descripcion">Calculadora básica, reloj digital y aplicación presupuesto.</div>
             </div>
         </div>
-        <div class="copyright">
-            <h3 class="c">&copy Copyrigth | Todos los Derechos Reservados</h3>
+    </section>
+
+    <div class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-items">
+            <!-- Iconos -->
+            <div class="item">
+                <a href="https://wa.me/573228835597" class="link-item" target="_blank">
+                    <li class="whatssapp"></li>
+                </a>
+                <p>322 883 5597</p>
+            </div>
+            <div class="item">
+                <a href="https://github.com/JhonEdilson"    class="link-item" target="_blank">
+                    <li class="github"></li>
+                </a>
+                <p>@JhonEdilson</p>
+            </div>
+            <div class="item">
+                <a href="#" class="link-item">
+                    <li class="correo"></li>
+                </a>
+                <p>jhon.vanegas.506<br>@gmail.com</p>
+            </div>
         </div>
     </div>
     <script src="js/app.js"></script>

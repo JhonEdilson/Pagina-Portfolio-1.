@@ -16,8 +16,18 @@ body{
     background-size: cover;
     /* background-attachment: fixed; */
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.hablemos:hover{
+    color: white;
+}
 h2{
     font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Roboto Mono', monospace;
 }
 .header{
     position: sticky;
@@ -65,7 +75,6 @@ h2{
 /* INICIO */
 .inicio{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     background-color: #e6e7e7d8;
     margin: 20px 20px 40px;
@@ -79,6 +88,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 }
 .titulo{
     display: flex;
@@ -174,7 +184,7 @@ h2{
 .card:hover{
     transform: translateX(10px) translateY(-5px);
     cursor: pointer;
-    box-shadow: -13px 13px 8px black;
+    box-shadow: -13px 13px 4px black;
 }
 .titulo-skill{
     font-family: 'Work Sans', sans-serif;
@@ -221,79 +231,169 @@ h2{
     margin-bottom: 20px;
 }
 
-/* CONTACT ME - MOBIL FIRST */
-#contacto{
-    background-color: #202425;
-    height: 90vh;
-    margin-top: -20px;
+/* -------------- PROYECTOS ------------*/
+#proyectos {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
-.contact_me{
+#proyectos h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.proyectos-items{
+    display: flex;
+}
+.container-proyectos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    padding: 30px;
-    color: white;
-    width: 100vw;
+    margin-right: 50px;
+    overflow: hidden;
 }
-.contact_me h1{
-    /* background-color: blue; */
-    font-size: 30px;
-}
-.contact_me h2{
-    /* background-color: blue; */
-    font-size: 20px;
-    color: rgb(214, 114, 42);
-}
-.contact_me h3{
-    font-weight: normal;
-}
-.contact_options{
+.container-proyectos h2{
     display: flex;
     justify-content: center;
-    /* background-color: red; */
-    height: 250px;
-    width: 95%;
-    flex-wrap: wrap;
-}
-.contact{
-    display: flex;
-    justify-content: left;
-    text-align: center;
-    background-color: #36393a;
-    margin: 5px;
-    width: 250px;
-    height: fit-content;
-    border-radius: 3px;
-    padding-top: 10px;
+    margin: 0 auto;
+    padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 170px;
+    color: white;
+    background-color: #2d2a32;
+    font-family: 'Poppins', sans-serif;
 }
-.contact_me_icons{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+.link-proyecto{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 0.9rem;
+}
+.item-proyecto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #e6e7e7d8;
+    padding-right: 7px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 130px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow:  -2px 2px 8px #201f1f;
+    transition: all 0.2s ease;
+}
+.item-proyecto:hover{
+    box-shadow:  -3px 3px 4px #201f1f;
+    transform: translateX(10px) translateY(-3px);
+}
+.descripcion{
+    font-size: 14px;
+    padding-right: 10px;    
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #e6e7e7d8;
+    width: 50vw;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* box-shadow:  -2px 2px 8px #201f1f; */
 }
 
-.contact_link{
-    color: white;
-    text-decoration: none;
+
+/* CONTACT ME - MOBIL FIRST */
+.contacto{
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.copyright{
+.contacto h2{
     display: flex;
     justify-content: center;
-    background-color: #202425;
-    border-top: chocolate 2px solid;
-    margin-top: 10px;
-    height: 30px;
-}
-.c{
-    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    font-weight: 600;
     color: white;
-    padding-top: 5px;
-    font-weight: normal;
+    background-color: #2d2a32;
+    border-top: 3px solid rgb(231, 131, 59);
+    width: 100vw;
+    padding: 0px 30px 1px 10px; 
+    border-radius: 1px;
+    margin-bottom: 40px;
 }
+.contacto-items{
+    color: #FFFFFF;
+    padding: 5px 35px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #333232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+    box-shadow:  -8px 8px 4px #201f1f;
+    transition: all ease 0.2s;
+}
+.contacto-items:hover{
+    box-shadow:  -12px 12px 4px #1b1a1a ;
+    transform: translateX(10px) translateY(-15px);
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+.item p{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.link-item .whatssapp{
+    background-image: url(/images/whatsapp.svg);
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    list-style: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.link-item .github{
+    background-image: url(/images/github.svg);
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    list-style: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.link-item .correo{
+    background-image: url(/images/google.svg);
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    list-style: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 
 
 
@@ -301,15 +401,199 @@ h2{
 
 @media only screen and (max-width: 575px){
     .navlinks{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .navitems{
+        margin-right: 10px;
     }
 }
 @media only screen and (min-width:576px) and (max-width:1050px){
+    .navlinks{
+        font-size: 18px;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .titulo{
+        font-size: 20px;
+        width: 100%;
+    }
+    .presentacion-items{
+        font-size: 17px;
+        padding: 0px;
+    }
 
+    /* Skills */
+    .titulo-skill h2{
+        font-size: 35px;
+    }
+    #habilidades{
+        height: 80vh;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        min-height: 300px;
+        max-height: 340px;
+        width:20vw;
+        background-color: rgba(255, 255, 255, 0.918);
+        margin-bottom:20px;
+        font-size: 12px;
+        border-radius:5px;
+        box-shadow: -10px 10px 15px black;
+        transition: all 0.2s ease;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .skills{
+        display: flex;
+        gap: 3em;
+    }
+    .skill img{
+        min-height: 80px;
+        max-height: 120px;
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .skill h2{
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: #161518;
+        max-width: 110px;
+        padding: 5px;
+        font-size: 1.01rem;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Contacto */
+    .contacto-items{
+        color: #FFFFFF;
+        padding: 5px 35px;
+        height: 200px;
+        width: 90vw;
+        margin-bottom: 20px;
+        background-color: #333232;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 7px;
+        box-shadow:  -8px 8px 4px #201f1f;
+        transition: all ease 0.2s;
+        overflow: hidden;
+    }
+    .item{
+        margin-right: 50px;
+    }
+    .item p{
+        font-size: 0.9em;
+    }
+    .link-item .github,.whatssapp,.correo{
+        width: 8vw;
+    }
 }
 
 @media only screen and (min-width:1060px){
+    .navlinks{
+        font-size: 18px;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .titulo{
+        font-size: 20px;
+        width: 100%;
+    }
+    .presentacion-items{
+        font-size: 17px;
+        padding: 0px;
+    }
 
+    /* Skills */
+    .titulo-skill h2{
+        font-size: 35px;
+    }
+    #habilidades{
+        height: 80vh;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        min-height: 300px;
+        max-height: 340px;
+        width:20vw;
+        background-color: rgba(255, 255, 255, 0.918);
+        margin-bottom:20px;
+        font-size: 12px;
+        border-radius:5px;
+        box-shadow: -10px 10px 15px black;
+        transition: all 0.2s ease;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .skills{
+        display: flex;
+        gap: 3em;
+    }
+    .skill img{
+        min-height: 80px;
+        max-height: 120px;
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .skill h2{
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: #161518;
+        max-width: 110px;
+        padding: 5px;
+        font-size: 1.01rem;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Contacto */
+    .contacto-items{
+        color: #FFFFFF;
+        padding: 5px 35px;
+        height: 200px;
+        width: 90vw;
+        margin-bottom: 20px;
+        background-color: #333232;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 7px;
+        box-shadow:  -8px 8px 4px #201f1f;
+        transition: all ease 0.2s;
+    }
+    .item{
+        margin-right: 50px;
+    }
+    .item p{
+        font-size: 0.9em;
+    }
+    .link-item .github,.whatssapp,.correo{
+        width: 8vw;
+    }
 }
 
 
