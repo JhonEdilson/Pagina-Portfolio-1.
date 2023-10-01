@@ -29,12 +29,19 @@ const reviews = [
     link: 'Proyectos/Listado personas/index.html',
     },
     {
-      id: 5,
+    id: 5,
     name: 'Reviews',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
     text: 'Proyecto reviews con Html, Css y Javascript',
-    link: 'Proyectos/calculadora-js-main/index.html',
+    link: 'Proyectos/Reviews/index.html',
     },
+    {
+    id: 6,
+    name: 'Contador',
+    tecnologias: 'HTML - CSS - JAVASCRIPT',
+    text: 'Contador Básico',
+    link: 'Proyectos/contador/index.html',
+    }
 ];
   // select items
 const author = document.getElementById('author');
@@ -80,8 +87,40 @@ prevBtn.addEventListener('click', function () {
     }
     showPerson(currentItem);
 });
-  // show random person
 
+// Texto oculto cards.
+
+// Creo una variable que almacene todas las cards.
+
+
+var cards = document.querySelectorAll(".card")
+
+
+// Crear la función mostrar texto, tomando como parámetro la variable card
+function mostrarTexto(card){
+  const parrafo = card.querySelector(".parrafo-oculto");
+  parrafo.style.display = "block";
+  const titulo = card.querySelector("h2");
+  titulo.style.display = "none";
+}
+
+function ocultarTexto(card){
+  const parrafo = card.querySelector(".parrafo-oculto");
+  parrafo.style.display = "none";
+  const titulo = card.querySelector("h2");
+  titulo.style.display = "block";
+}
+
+// Explicación del parámetro CARD, aquí en este código de abajo realizamos un for each de las cards 
+// a la cual le pasamos como parámetro card que sería igual a la card en la que se pocisiona actualmente o la card actual,
+// Así después en las funciones de mostrar y ocultarTexto se utiliza el mismo parámetro card del For each haciendo referencia
+// A la carta actual sobre la cual tengo el mouse.
+
+
+cards.forEach(card => {
+  card.addEventListener("mouseover", mostrarTexto()); // así lo hubiera puesto yo.
+  card.addEventListener("mouseout", () => ocultarTexto());
+});
 
 
 

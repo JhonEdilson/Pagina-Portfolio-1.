@@ -20,8 +20,8 @@
                     <li class="navitems"><a href="#inicio" class="navlinks">Inicio</a></li>
                     <!-- <li class="navitems"><a href="" class="navlinks">Acerca de Mí</a></li> -->
                     <li class="navitems"><a href="#habilidades" class="navlinks">Habilidades</a></li>
-                    <li class="navitems"><a href="#contacto" class="navlinks">Contacto</a></li>
                     <li class="navitems"><a href="#proyectos" class="navlinks">Proyectos</a></li>
+                    <li class="navitems"><a href="#contacto" class="navlinks">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,21 +31,29 @@
         <div class="presentacion">
             <div class="titulos">
                 <div class="titulo">
-                    <h2>HEY, SOY JHON EDILSON,<br> DESARROLLADOR WEB <span class="chocolate">JR</span>.</h2>
+                    <h2>HOLA, SOY JHON EDILSON,<br> DESARROLLADOR WEB <span class="chocolate">JR</span>.</h2>
                 </div>
                 <ul class="presentacion-items">
-                    <li>°Desarrollador</li>
-                    <li>°Git Hub</li>
-                    <li>°Ganas de aprender</li>
+                    <li>°Deseo de adquirir conocimientos</li>
+                    <li>°Crecimiento personal</li>
+                    <li>°Desarrollador Jr</li>
                 </ul>
             </div>
             <div class="imagen">
                 <div class="imagen-container"></div>
             </div>
             <div class="hablemos">
-                <button class="btn" onclick="location.href='#proyectos'">Ver Proyectos</button>
-                <button class="btn"><a class="hablemos-link" href="https://wa.me/573228835597" target="_blank">Vamos a Hablar</a></button>
+                <button class="btn" onclick="location.href='https://github.com/JhonEdilson'">Ver Proyectos</button>
+                <a class="btn" href="https://wa.me/573228835597" target="_blank">Hablemos</a>
             </div>
+        </div>
+    </section>
+
+    <section id="sobreMi">
+        <div class="contenido">
+            <h2>Sobre Mí</h2>
+            <div class="underline"></div>
+            <p>Desde muy temprana edad el mundo de la tecnología y los sistemas siempre me ha interesado, a medidad que he ido creciendo mi interés por esta ha ido aumentando sobre todo en el ámbito de la programación, quería construir lo que usaba, los juegos que jugaba, los programas que usaba. LLevo en este mundo poco tiempo y mi deseo de aprender y desarrolarme tanto personal como profesionalmente en este mundo no han disminuido, pienso que el deseo de aprender y salir adelante me convierte en un buen candidato para una organización.</p>
         </div>
     </section>
 
@@ -55,22 +63,25 @@
             <p>Estas son mis habilidades</p>
         </div>
         <div class="skills">
-            <div class="card">
+            <div class="card" onmouseover="mostrarTexto(this)" onmouseout="ocultarTexto(this)">
                 <div class="skill">
-                    <img src="images/html (1).png" alt="" >
+                    <img src="images/html.png" alt="" >
                     <h2>HTML y CSS</h2>
+                    <p class="parrafo-oculto">HTML Y CSS Nivel intermedio/avanzado.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onmouseover="mostrarTexto(this)" onmouseout="ocultarTexto(this)">
                 <div class="skill">
                     <img src="images/js.png" alt="">
                     <h2>JavaScript</h2>
+                    <p class="parrafo-oculto">JavaScript nivel intermedio.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onmouseover="mostrarTexto(this)" onmouseout="ocultarTexto(this)">
                 <div class="skill">
                     <img src="images/github.png" alt="" >
                     <h2>Git y Git Hub</h2>
+                    <p class="parrafo-oculto">Conocimiento básico de git y github.</p>
                 </div>
             </div>
         </div>
