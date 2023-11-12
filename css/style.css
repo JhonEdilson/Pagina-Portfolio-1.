@@ -102,19 +102,17 @@ h1{
 .inicio{
     display: flex;
     justify-content: center;
-    background-color: #e6e7e7d8;
     margin: 20px 20px 40px;
     width: 93%;
     height: 80vh;
     border-radius: 5px;
-    box-shadow: -10px 15px 5px rgba(0, 0, 0, 0.589);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.589);
     padding-top: 0px;
 }
 .presentacion{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
 }
 .titulo{
     display: flex;
@@ -130,6 +128,12 @@ h1{
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: center;
+}
+.presentacion-items li a{
+    text-decoration: none;
+}
+.presentacion-items li a:hover{
+    color: rgb(182, 83, 12);
 }
 
 .imagen{
@@ -180,7 +184,7 @@ h1{
     width: 100%;
     height: fit-content;
     padding: 10px;
-    border-top:4px solid rgb(247, 155, 90) ;
+    /* border-top:3px solid var(--clr-black) ; */
 }
 
 .contenido{

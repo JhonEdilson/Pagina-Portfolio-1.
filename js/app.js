@@ -1,42 +1,49 @@
 // local reviews data
 const reviews = [
-    {
+  {
     id: 1,
+    name: 'Página Comida',
+    tecnologias: 'HTML - CSS - JAVASCRIPT',
+    text: "Página web gourmet sobre alitas, diseño funcional y elegante",
+    link: 'Proyectos/PaginaComida/index.html',
+    },
+    {
+    id: 2,
     name: 'Calculadora',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
     text: "Calculadora completa con html, css y Javascript",
     link: 'Proyectos/calculadora-js-main/index.html',
     },
     {
-    id: 2,
+    id: 3,
     name: 'Paleta de colores',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
     text: 'Paleta de colores con Html, Css y Javascript',
     link: 'Proyectos/Paleta de colores/index.html',
     },
     {
-    id: 3,
+    id: 4,
     name: 'Generador de contraseña',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
-    text: 'Generador de contraseñas (proyecto de Youtube) con Html, Css y Javascript',
+    text: 'Generador de contraseñas, con Html, Css y Javascript',
     link: 'Proyectos/Generador contraseña/index.html',
     },
     {
-    id: 4,
+    id: 5,
     name: 'Listado de Personas',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
     text: 'Proyecto como material de un curso en Udemy, listado de persona con Html, Css y Javascript',
     link: 'Proyectos/Listado personas/index.html',
     },
     {
-    id: 5,
+    id: 6,
     name: 'Reviews',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
     text: 'Proyecto reviews con Html, Css y Javascript',
     link: 'Proyectos/Reviews/index.html',
     },
     {
-    id: 6,
+    id: 7,
     name: 'Contador',
     tecnologias: 'HTML - CSS - JAVASCRIPT',
     text: 'Contador Básico',
